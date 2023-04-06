@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <div class="startPage" >
+            <button class="startbtn">Start</button>
+        </div>
+        <div class="rulesPage hide1">
+            <section>
+                <header>Some Rules of this Quiz:</header>
+                <p>1. You will have only 15 seconds per each question.</p>
+                <p>2. Once you select your answer, it can't be undone.</p>
+                <p>3. You can't select any option once time goes off.</p>
+                <p>4. You can't exit from the Quiz while you're playing.</p>
+                <p>5. You'll get points on the basis of your correct answers.</p>
+                <footer>
+                    <button class="exitbtn">Exit Quiz</button>
+                    <button class="contbtn">Continue</button>
+                </footer>
+            </section>
+        </div>
+        <div class="display-container">
+            <div>
+                <header class="qheader">
+                    <div class="total_que">
+                    </div>
+                    <div class="timer">
+                        <svg fill="#1100ff" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-45.5 -45.5 546.00 546.00" xml:space="preserve" stroke="#1100ff" stroke-width="10.465" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <path d="M332.229,90.04l14.238-27.159l-26.57-13.93L305.67,76.087c-19.618-8.465-40.875-13.849-63.17-15.523V30h48.269V0H164.231v30 H212.5v30.563c-22.295,1.674-43.553,7.059-63.171,15.523L135.103,48.95l-26.57,13.93l14.239,27.16 C67.055,124.958,30,186.897,30,257.5C30,366.576,118.424,455,227.5,455S425,366.576,425,257.5 C425,186.896,387.944,124.958,332.229,90.04z M355,272.5H212.5V130h30v112.5H355V272.5z"></path> </g></svg>
+                        <p class="timer_sec">10</p>
+                    </div>
+                </header>
+            </div>
+            <div>
+                <section>
+                    <div class="que_text">
+                        <!-- Here I've inserted question from JavaScript -->
+                    </div>
+                    <div class="option_list">
+                        <!-- Here I've inserted options from JavaScript -->
+                    </div>
+                </section>
+            </div>
+            <!-- footer of Quiz Box -->
+            <div>
+                <footer>
+                    <button class="next_btn">Next Que</button>
+                </footer>
+            </div>
+        </div>
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text">
+                <!-- Here I've inserted Score Result from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+    <script src="question.js"></script>
+</body>
+</html>
